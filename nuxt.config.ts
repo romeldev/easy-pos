@@ -6,4 +6,10 @@ export default defineNuxtConfig({
   app: {
     baseURL: '/easy-pos/',
   },
+  runtimeConfig: {
+    public: {
+      supabaseUrl: process.env.SUPABASE_URL,
+      supabaseKey: process.env.SUPABASE_KEY,
+    },
+  },
 })
